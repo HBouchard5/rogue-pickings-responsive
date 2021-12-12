@@ -126,7 +126,6 @@ header nav ul li a{
   justify-content: center;
 }
 
-
 .bottom-section h3 {
 	padding-top: 10px;
   text-align: left;
@@ -158,13 +157,42 @@ header nav ul li a{
 footer {
 	/*height: 50px;*/
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	text-align: center;
+	margin: 15px 0;
+  width: 100%;
   display: flex;
+  justify-content: center;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875rem;
+}
+
+/* -------- For tablets (768px) --------- */
+@media all and (min-width: 768px) {
+  .bottom-section {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    flex-basis: 33.3%;
+    padding: 0 15px;
+  }
+
+  .section-two {
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+  }
+
+}
+
+
+/* -------- For desktops (1200px) ------- */
+@media all and (min-width: 1200px) {
+
 }
